@@ -1,0 +1,174 @@
+1. Implemente um programa que determine se um número fornecido pelo usuário é par ou ímpar.
+
+// let numero = Number(prompt('Digite um número: '))
+// if (numero % 2 === 0){
+//     console.log('O número é par')
+// }else{
+//     console.log('O número é ímpar')
+// }
+
+2. Escreva um programa que peça ao usuário para inserir três números e, em seguida, imprima o maior deles.
+
+// let num1 = Number(prompt('Digite o primeiro número: '))
+// let num2 = Number(prompt('Digite o segundo número: '))
+// let num3 = Number(prompt('Digite o terceiro número: '))
+
+// if(num1 > num2 && num1 > num3){
+//     console.log(`O número ${num1} é o maior`)
+// }else if(num2 > num1 && num2 > num3){
+//     console.log(`O número ${num2} é o maior`)
+// }else{
+//     console.log(`O número ${num3} é o maior`)
+// }
+
+3. Crie um programa que recebe três notas, calcula a média e informe se o aluno foi aprovado (média maior ou igual a 7) ou reprovado (média menor que 7).
+
+// let nota1 = Number(prompt('Nota 1: '))
+// let nota2 = Number(prompt('Nota 2: '))
+// let nota3 = Number(prompt('Nota 3: '))
+
+// let media = (nota1 + nota2 + nota3)/3
+
+// if(media >= 7){
+//     console.log('Aprovado!')
+// }else{
+//     console.log('Reprovado!')
+// }
+
+
+4. Desenvolva um programa que receba o ano de nascimento de uma pessoa e informe se ela já é maior de idade ou não.
+
+// let anoNascimento = Number(prompt('Digite o ano de seu nascimento: '))
+// let anoAtual = 2024
+
+// if((2024 - anoNascimento) >= 18){
+//     console.log('Você já é maior de idade!')
+// }else{
+//     console.log('Você ainda é menor de idade!')
+// }
+
+
+5. Faça um programa que converte uma temperatura de Celsius para Fahrenheit ou vice-versa, dependendo da escolha do usuário.
+
+// let escolha = Number(prompt(' --- CONVERSOR ---\n 1 - Celsius para Fahrenheit\n 2 - Fahrenheit para Celsius'))
+
+// if (escolha === 1){
+//     let celsius = Number(prompt('Digite a temperatura em Celsius: '))
+//     let fahrenheit = (celsius * 9/5) + 32
+//     console.log(fahrenheit)
+// }else{
+//     let fahrenheit = Number(prompt('Digite a temperatura em Fahrenheit: '))
+//     let celsius = (fahrenheit - 32) * 5/9
+//     console.log(celsius)
+// }
+
+
+6. Escreva um programa que solicite dois números ao usuário e verifique se pelo menos um deles é múltiplo do outro. Se pelo menos um for múltiplo, exiba a mensagem “Pelo menos um dos números é múltiplo do outro”. Caso contrário, exiba a mensagem “Nenhum dos números é múltiplo do outro”.
+
+// let num1 = Number(prompt('Digite o primeiro número: '))
+// let num2 = Number(prompt('Digite o segundo número: '))
+
+//  if (num1 % num2 === 0 || num2 % num1 === 0){
+//     console.log('Pelo menos um dos números é múltiplo do outro')
+//  }else{
+//     console.log('Nenhum dos números é múltiplo do outro')
+//  }
+
+7. Escreva um programa que peça ao usuário o valor de três lados de um triângulo e classifique-o como triângulo equilátero, isósceles, escaleno ou inválido.
+
+//  Um triângulo é equilátero quando todos os lados são iguais, é isósceles quando dois lados são iguais e escaleno quando todos os lados são diferentes. Se os valores forem inválidos, o programa deve exibir uma mensagem de erro.
+
+// let lado1 = Number(prompt('Lado 1: '))
+// let lado2 = Number(prompt('Lado 2: '))
+// let lado3 = Number(prompt('Lado 3: '))
+
+// if (lado1 < (lado2 + lado3) && lado2 < (lado1 + lado3) && lado3 < (lado1 + lado2)){
+//     if (lado1 === lado2 && lado1 === lado3){
+//         console.log('Triângulo Equilátero')
+//     } else if(lado1 === lado2 || lado1 === lado3 || lado2 === lado3){
+//         console.log('Triângulo Isósceles')
+//     } else{
+//         console.log('Triângulo Escaleno')
+//     }
+// } else{
+//     console.log('Não é um triângulo')
+// }
+
+
+8. Crie um programa que simula um restaurante. O usuário escolhe um prato do menu (opções: pizza, hambúrguer, salada, macarrão) usando a instrução switch. Para cada prato escolhido, exiba o preço e a descrição do prato.
+
+// let menu = prompt('--- MENU ---\nPizza\nHambúrguer\nSalada\nMacarrão\n')
+
+// switch(menu){
+//     case 'pizza':
+//         console.log('Pizza: R$ 20,00\nDescrição: Pizza de mussarela')
+//         break
+//     case 'hamburguer':
+//         console.log('Hambúrguer: R$ 15,00\nDescrição: X-Tudo')
+//         break
+//     case 'salada':
+//         console.log('Salada: R$ 10,00\nDescrição: Salada colorida')
+//         break
+//     case 'macarrao':
+//         console.log('Macarrão: R$ 12,00\nDescrição: Macarrão ao molho branco')
+//         break
+//     default:
+//         console.log('Opção inválida')
+// }
+
+9. Escreva um programa que peça ao usuário sua altura e peso, calcule o IMC (Índice de Massa Corporal) e classifique de acordo com a tabela da OMS (abaixo do peso, peso normal, sobrepeso, obesidade). Exiba o valor do IMC e a classificação.
+
+// let altura = Number(prompt('Altura: '))
+// let peso = Number(prompt('Peso: '))
+
+// let imc = peso / (altura * altura)
+// console.log(imc.toFixed(2))
+// if (imc < 18.5){
+//     console.log('Abaixo do peso')
+// } else if (imc >= 18.5 && imc < 25){
+//     console.log('Peso normal')
+// } else if (imc >= 25 && imc < 30){
+//      console.log('Sobrepeso')
+// } else if (imc >= 30 && imc < 35){
+//     console.log('Obesidade grau I')
+// } else if (imc >= 35 && imc < 40){
+//     console.log('Obesidade grau II')
+// } else if (imc >= 40){
+//     console.log('Obesidade grau III')
+// } else{
+//     console.log('Valor inválido')
+// }
+
+10. Escreva um programa que solicite ao usuário um número positivo e exiba todos os números pares de 0 até o número informado (use o laço de repetição while).
+
+// let numero = Number(prompt('Digite um número inteiro: '))
+// let contador = 0
+// while (contador <= numero){
+//     if (contador % 2 == 0){
+//         console.log(contador)
+//         }
+//         contador++
+        
+// }
+
+
+11. Escreva um programa que solicite ao usuário um número positivo e exiba todos os números ímpares de 0 até o número informado (use o laço de repetição for).
+
+// let numero = Number(prompt('Digite um número inteiro: '))
+
+// for(let i = 0; i <= numero; i++){
+//     if(i % 2 != 0){
+//         console.log(i)
+// }
+// }
+
+
+12. Crie um programa que calcule o fatorial de um número fornecido pelo usuário.
+
+// let numero = Number(prompt('Digite um número inteiro: '))
+
+// let fatorial = 1
+// for(let i = numero; i > 0; i--){
+//     fatorial = fatorial * i
+//     }
+//     console.log(fatorial)
